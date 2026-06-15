@@ -142,140 +142,18 @@ export default function Home() {
                 </header>
                 <section className="carousel">
                     <div className="carousel-content">
-                        <div className="carousel-card">
-                            <img src={gustavomiranda} alt="foto do cliente" />
-                            <span className="testimony">
-                                <p>
-                                    "A DonaFrost é a melhor empresa de comida congelada que já experimentei! A qualidade dos pratos é incrível, e o sabor é simplesmente delicioso. Recomendo a todos que buscam praticidade sem abrir mão do sabor."
-                                </p>
-                            </span>
-                            <span className="rating">
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-
-
-                            </span>
-                            <span className="name">
-                                <p>João Silva</p>
-                                <p>Cliente Satisfeito</p>
-                            </span>
-                        </div>
                         <TestimonialCard image={gustavomiranda} testimony="nao sei jogar bola" nome="endrick" cargo="jose ruela" quantidadeEstrelas={2} />
-                        <div className="carousel-card">
-                            <img src={gustavomiranda} alt="foto do cliente" />
-                            <span className="testimony">
-                                <p>
-                                    "A DonaFrost é a melhor empresa de comida congelada que já experimentei! A qualidade dos pratos é incrível, e o sabor é simplesmente delicioso. Recomendo a todos que buscam praticidade sem abrir mão do sabor."
-                                </p>
-                            </span>
-                            <span className="rating">
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-
-
-                            </span>
-                            <span className="name">
-                                <p>João Silva</p>
-                                <p>Cliente Satisfeito</p>
-                            </span>
-                        </div>
-                        <div className="carousel-card">
-                            <img src={gustavomiranda} alt="foto do cliente" />
-                            <span className="testimony">
-                                <p>
-                                    "A DonaFrost é a melhor empresa de comida congelada que já experimentei! A qualidade dos pratos é incrível, e o sabor é simplesmente delicioso. Recomendo a todos que buscam praticidade sem abrir mão do sabor."
-                                </p>
-                            </span>
-                            <span className="rating">
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-
-
-                            </span>
-                            <span className="name">
-                                <p>João Silva</p>
-                                <p>Cliente Satisfeito</p>
-                            </span>
-                        </div>
+                        <TestimonialCard image={gustavomiranda} testimony="nao sei jogar bola" nome="endrick" cargo="jose ruela" quantidadeEstrelas={2} />
+                        <TestimonialCard image={gustavomiranda} testimony="nao sei jogar bola" nome="endrick" cargo="jose ruela" quantidadeEstrelas={2} />
+                        <TestimonialCard image={gustavomiranda} testimony="nao sei jogar bola" nome="endrick" cargo="jose ruela" quantidadeEstrelas={2} />
                     </div>
 
                     <div className="carousel-content">
-                        <div className="carousel-card">
-                            <img src={gustavomiranda} alt="foto do cliente" />
-                            <span className="testimony">
-                                <p>
-                                    "A DonaFrost é a melhor empresa de comida congelada que já experimentei! A qualidade dos pratos é incrível, e o sabor é simplesmente delicioso. Recomendo a todos que buscam praticidade sem abrir mão do sabor."
-                                </p>
-                            </span>
-                            <span className="rating">
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
+                        <TestimonialCard image={gustavomiranda} testimony="nao sei jogar bola" nome="endrick" cargo="jose ruela" quantidadeEstrelas={2} />
+                        <TestimonialCard image={gustavomiranda} testimony="nao sei jogar bola" nome="endrick" cargo="jose ruela" quantidadeEstrelas={2} />
+                        <TestimonialCard image={gustavomiranda} testimony="nao sei jogar bola" nome="endrick" cargo="jose ruela" quantidadeEstrelas={2} />
+                        <TestimonialCard image={gustavomiranda} testimony="nao sei jogar bola" nome="endrick" cargo="jose ruela" quantidadeEstrelas={2} />
 
-
-                            </span>
-                            <span className="name">
-                                <p>João Silva</p>
-                                <p>Cliente Satisfeito</p>
-                            </span>
-                        </div>
-                        <div className="carousel-card">
-                            <img src={gustavomiranda} alt="foto do cliente" />
-                            <span className="testimony">
-                                <p>
-                                    "A DonaFrost é a melhor empresa de comida congelada que já experimentei! A qualidade dos pratos é incrível, e o sabor é simplesmente delicioso. Recomendo a todos que buscam praticidade sem abrir mão do sabor."
-                                </p>
-                            </span>
-                            <span className="rating">
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-
-
-                            </span>
-                            <span className="name">
-                                <p>João Silva</p>
-                                <p>Cliente Satisfeito</p>
-                            </span>
-                        </div>
-                        <div className="carousel-card">
-                            <img src={gustavomiranda} alt="foto do cliente" />
-                            <span className="testimony">
-                                <p>
-                                    "A DonaFrost é a melhor empresa de comida congelada que já experimentei! A qualidade dos pratos é incrível, e o sabor é simplesmente delicioso. Recomendo a todos que buscam praticidade sem abrir mão do sabor."
-                                </p>
-                            </span>
-                            <span className="rating">
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-            //tem q fazer as listas depois usando um map determinando a quantidade de estrelas, se sao preenchidas ou nao.
-                                //usando new array.lenght(parametro) e usando o .fill pra preencher
-
-
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-                                <img src={""} alt="estrelas de avaliação" width={22} height={20} />
-
-
-                            </span>
-                            <span className="name">
-                                <p>João Silva</p>
-                                <p>Cliente Satisfeito</p>
-                            </span>
-                        </div>
 
                     </div>
                 </section>

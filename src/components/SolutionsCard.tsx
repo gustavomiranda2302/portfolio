@@ -9,7 +9,7 @@ interface SolutionsCardProps {
 
 
 }
-export default function SoluttionCard({ image, alt, title, text }: SolutionsCardProps) {
+export default function SolutionCard({ image, alt, title, text }: SolutionsCardProps) {
     return (
         <div className="card">
             <img src={image} alt={alt && title} />

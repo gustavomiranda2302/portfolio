@@ -11,7 +11,7 @@ import quadrado1 from "../assets/quadrado1.svg"
 import quadrado2 from "../assets/quadrado2.svg"
 import { useState } from "react"
 import TestimonialCard from "../components/TestimonialCard"
-import SolutionsCard from "../components/SolutionsCard"
+import SolutionCard from "../components/SolutionsCard"
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     return (
@@ -121,9 +121,9 @@ export default function Home() {
                 </header>
                 <section className="solutions">
 
-                    <SolutionsCard image={gustavomiranda} title="produto vencedor" text="teste" />
-                    <SolutionsCard image={gustavomiranda} title="produto vencedor" text="teste" />
-                    <SolutionsCard image={gustavomiranda} title="produto vencedor" text="teste" />
+                    <SolutionCard image={gustavomiranda} title="produto vencedor" text="teste" />
+                    <SolutionCard image={gustavomiranda} title="produto vencedor" text="teste" />
+                    <SolutionCard image={gustavomiranda} title="produto vencedor" text="teste" />
 
                 </section>
 
@@ -165,9 +165,27 @@ export default function Home() {
                     <h2>Nossos planos</h2>
                 </header>
                 <section className="even-columns gap-1.5">
-// Cartões de preço
 
 
+
+                    <div className="pricing-card" >
+                        <span className="plan">
+                            <h3>Básico</h3>
+                            <p>Você tem direito a uma prova das comidas DonaFrost.</p>
+                        </span>
+                        <h2>Grátis</h2>
+                        <Button text="Pedir agora" secondary key="free" />
+                        <span className="hr" /><span className="features">
+                            <img src={gustavomiranda} alt="ícone gustavomiranda" width={24} height={24} />
+                            <p>Retire na loja</p>
+                        </span>
+                        <ul className="features">
+                            <li>
+                                <img src={gustavomiranda} alt="ícone gustavomiranda" width={24} height={24} />
+                                <p>Apenas 1 por CPF</p>
+                            </li>
+                        </ul>
+                    </div>
                     <div className="pricing-card" >
                         <span className="plan">
                             <h3>Básico</h3>

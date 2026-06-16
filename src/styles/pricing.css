@@ -40,13 +40,18 @@
   gap: 0.5rem;
 }
 .premium {
-  border: solid 0.2rem var(--primary-color);
-  padding: 0rem 1.5rem 3rem 1.5rem;
+
 
   .plan > h3 {
     color: var(--primary-color);
   }
 }
+.premium:hover{
+    border: solid 0.2rem var(--primary-color);
+  padding: 0rem 1.5rem 3rem 1.5rem;
+
+}
+
 .bonus {
   display: flex;
   justify-content: center;

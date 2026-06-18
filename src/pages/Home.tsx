@@ -3,6 +3,7 @@ import "../styles/header.css"
 import "../styles/hero.css"
 import "../styles/testimonials.css"
 import "../styles/pricing.css"
+import "../styles/contact.css"
 import gustavomiranda from "../assets/gustavomiranda.svg"
 import Menu from "../assets/menu.svg"
 import Close from "../assets/close.svg"
@@ -238,6 +239,24 @@ export default function Home() {
                         </span>
                     </div>
                 </section>
+
+
+            </section>
+
+            <section id="contact">
+                <p>teste</p>
+                <h3>
+                    TESTE h3
+                </h3>
+                <text>
+                    entre em contato com a gente, ficaremos muito felizes em te responder :)
+                </text>
+                <input type="email" placeholder="insira seu email" />
+
+                <input type="text" placeholder="Sua mensagem!!" />
+                <button>Enviar</button>
+
+
 
 
             </section>

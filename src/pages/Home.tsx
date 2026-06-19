@@ -4,6 +4,7 @@ import "../styles/hero.css"
 import "../styles/testimonials.css"
 import "../styles/pricing.css"
 import "../styles/contact.css"
+import "../styles/footer.css"
 import gustavomiranda from "../assets/gustavomiranda.svg"
 import Menu from "../assets/menu.svg"
 import Close from "../assets/close.svg"
@@ -252,14 +253,37 @@ export default function Home() {
                     entre em contato com a gente, ficaremos muito felizes em te responder :)
                 </text>
                 <input type="email" placeholder="insira seu email" />
-
                 <input type="text" placeholder="Sua mensagem!!" />
                 <button>Enviar</button>
 
-
-
-
             </section>
+            <footer id="footer">
+                <section className="tres-partes">
+
+                    <div >
+                        <img src={gustavomiranda} alt="" />
+                        <img alt="icone gmail" />
+                        <img alt="icone linkedin" />
+                        <img alt="icone github" />
+
+
+                    </div>
+
+                    <div >
+                        <p>teste</p>
+
+                    </div>
+                    <div>
+                        <p>
+                            teste
+                        </p>
+
+                    </div>
+                </section>
+                <div className="dedicatoria">
+                    <p>feito com muito carinho em 06/2026</p>
+                </div>
+            </footer>
 
 
 

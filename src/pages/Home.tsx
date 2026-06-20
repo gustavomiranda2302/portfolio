@@ -5,15 +5,21 @@ import "../styles/testimonials.css"
 import "../styles/pricing.css"
 import "../styles/contact.css"
 import "../styles/footer.css"
+
 import gustavomiranda from "../assets/gustavomiranda.svg"
 import Menu from "../assets/menu.svg"
 import Close from "../assets/close.svg"
 import Button from "../components/Button"
 import quadrado1 from "../assets/quadrado1.svg"
 import quadrado2 from "../assets/quadrado2.svg"
+import github from "../assets/github-svgrepo-com.svg"
+import mail from "../assets/google-gmail-svgrepo-com.svg"
+import linkedin from "../assets/linkedin-svgrepo-com.svg"
+
 import { useState } from "react"
 import TestimonialCard from "../components/TestimonialCard"
 import SolutionCard from "../components/SolutionsCard"
+import { ExternalButton } from "../components/ExternalButton"
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     return (
@@ -257,46 +263,51 @@ export default function Home() {
                 <button>Enviar</button>
 
             </section>
+
             <footer id="footer">
+                <img src={gustavomiranda} alt="" style={{ width: "160px", height: "80px" }} />
+                <h3>Outras formas de contato:</h3>
                 <section className="tres-partes">
 
-                    <div >
-                        <img src={gustavomiranda} alt="" />
-                        <img alt="icone gmail" />
-                        <img alt="icone linkedin" />
-                        <img alt="icone github" />
+                    <div className="contact-col">
+                        <h4>Gustavo Miranda</h4>
+                        <div className="icons-row">
+                            <ExternalButton href="https://mail.google.com/mail/?view=cm&to=gustavomiranda230206@gmail.com" svgUrl={mail} label="" />
+                            <ExternalButton href="https://www.linkedin.com/in/gustavo-miranda-dos-santos-5301062b6/" svgUrl={linkedin} label="" />
+                            <ExternalButton href="https://github.com/gustavomiranda2302" svgUrl={github} label="" />
+
+                        </div>
+
+
 
 
                     </div>
 
-                    <div >
-                        <p>teste</p>
+                    <div className="navigation">
+                        <div className="navigation">
+                            <h4>Navegação</h4>
+                            <a href="#hero">Home</a>
+                            <a href="#solution">Soluções</a>
+                            <a href="#testimonials">Depoimentos</a>
+                            <a href="#pricing">Preços</a>
+                            <a href="#contact">Contato</a>
+                        </div>
 
                     </div>
-                    <div>
-                        <p>
-                            teste
-                        </p>
 
+                    <div className="projects">
+                        <h4>Projetos</h4>
+                        <a href="https://github.com/gustavomiranda2302/moviefinder" target="_blank" rel="noreferrer noopener ">MovieFinder</a>
+                        <a href="https://github.com/gustavomiranda2302/python-anki" target="_blank" rel="noreferrer noopener ">PythonAnki</a>
+                        <a href="https://github.com/gustavomiranda2302?tab=repositories" target="_blank" rel="noreferrer noopener ">Ver todos →</a>
                     </div>
+
+
                 </section>
                 <div className="dedicatoria">
                     <p>feito com muito carinho em 06/2026</p>
                 </div>
             </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
         </>
 
     )

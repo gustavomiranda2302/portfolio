@@ -1,0 +1,56 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    padding: 2rem 2rem 3rem 2rem;
+    box-sizing: border-box;
+}
+
+.tres-partes {
+    height: 80%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.tres-partes div {
+    display: flex;
+    width: 33.33%;
+    height: 100%;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.contact-col {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.contact-col .icons-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.navigation {
+    align-items: center;
+}
+
+.projects {
+    align-items: flex-end;
+}
+
+.dedicatoria {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    color: var(--second-text-color);
+}

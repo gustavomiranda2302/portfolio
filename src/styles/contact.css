@@ -1,0 +1,44 @@
+#contact{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid red;*/
+    height: fit-content;
+    gap: 2rem;
+
+    
+    
+    :first-child {
+    color: var(--primary-color);
+    font-weight: var(--fw-bold);
+  }
+  input{
+    box-sizing: border-box;
+    width: 35rem;
+    height: 3.5rem;
+    border-color: var(--primary-color);
+    border-radius: 0.4rem;
+    
+  }
+  button{
+    border-radius: 0.4rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    width: 10rem;
+    height: 3.5rem;
+    border: solid 0.2rem var(--primary-color);
+    
+  }
+  button:hover{
+    border: solid 0.2rem var(--secondary-color);
+    cursor: pointer;
+  }
+  
+  
+
+
+
+}

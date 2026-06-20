@@ -1,6 +1,7 @@
 #testimonials {
   height: 100vh;
   background: var(--secondary-color);
+
   display: flex;
   flex-direction: column;
   padding-block: 4rem;

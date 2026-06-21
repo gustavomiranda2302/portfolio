@@ -21,6 +21,7 @@ import TestimonialCard from "../components/TestimonialCard"
 import SolutionCard from "../components/SolutionsCard"
 import { Pricing } from "../components/Pricing"
 import { ExternalButton } from "../components/ExternalButton"
+import { Contact } from "../components/Contact"
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     return (
@@ -217,19 +218,8 @@ export default function Home() {
 
             </section>
 
-            <section id="contact">
-                <p>teste</p>
-                <h3>
-                    TESTE h3
-                </h3>
-                <text>
-                    entre em contato com a gente, ficaremos muito felizes em te responder :)
-                </text>
-                <input type="email" placeholder="insira seu email" />
-                <input type="text" placeholder="Sua mensagem!!" />
-                <button>Enviar</button>
+            <Contact />
 
-            </section>
 
             <footer id="footer">
                 <img src={gustavomiranda} alt="" style={{ width: "160px", height: "80px" }} />

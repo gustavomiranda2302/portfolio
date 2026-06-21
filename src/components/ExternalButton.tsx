@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/ExternalButton.css"
+import "../styles/externalButton.css"
 interface ExternalButtonProps {
     href: string;
     svgUrl: string;

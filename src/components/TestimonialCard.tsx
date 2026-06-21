@@ -1,3 +1,6 @@
+import estrela from "../assets/estrela.svg"
+import estrelaVazada from "../assets/estrelaVazada.svg"
+
 interface TestimonialCardProps {
     image: string;
     testimony: string;
@@ -20,13 +23,13 @@ export default function TestimonialCard(props: TestimonialCardProps) {
             </span>
             <span className="rating">
                 {
-                    ListaEstrelas.map((item, index) => (
-                        <img key={index} src={".svg da estrela"} alt="estrelas de avaliação" width={22} height={20} />
+                    ListaEstrelas.map((index) => (
+                        <img key={index} src={estrela} alt="estrelas de avaliação" width={22} height={20} />
                     ))
                 }
                 {
-                    ListaEstrelasVazias.map((item, index) => (
-                        <img key={index} src={".svg da estrela vazia"} alt="estrelas de avaliação" width={22} height={20} />
+                    ListaEstrelasVazias.map((index) => (
+                        <img key={index} src={estrelaVazada} alt="estrelas de avaliação" width={22} height={20} />
                     ))
                 }
 
@@ -44,15 +47,3 @@ export default function TestimonialCard(props: TestimonialCardProps) {
 }
 
 
-//
-//
-//        <span className="rating">
-//                {Array.from({ length: 5 }, (_, i) => (
-//                   <img
-//                      key={i}
-//                     src={i < props.quanridadeEstrelas ? "/path/to/filled-star.png" : "/path/to/empty-star.png"}
-//                    alt="estrelas de avaliação"
-//                   width={22}
-//                  height={20}
-//             />
-//       ))}

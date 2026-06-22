@@ -5,9 +5,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid red;*/
-    height: fit-content;
+    height: auto;
+    width: 100%;
     gap: 2rem;
+    border: 1px solid red;
+    box-sizing: border-box;
 
     
     
@@ -30,12 +32,26 @@
     width: 10rem;
     height: 3.5rem;
     border: solid 0.2rem var(--primary-color);
+    align-self: center;
+    justify-self: center;
     
   }
   button:hover{
     border: solid 0.2rem var(--secondary-color);
     cursor: pointer;
   }
+  .RECAPTCHA , p , h3{
+    align-self: center;
+    justify-self: center;
+  }
+  p{
+    flex-wrap: nowrap;
+  }
+  .last-p{
+    color: var(--second-text-color);
+  }
+  
+
   
   
 

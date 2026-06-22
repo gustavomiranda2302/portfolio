@@ -1,3 +1,4 @@
+import "../styles/contact.css"
 import { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 import type { FormEvent } from "react";
@@ -78,37 +79,48 @@ const ContactForm = () => {
     }
 
     function handleCompleteChallenge(token: string | null) {
+        if (!token) {
+            setRecaptchaToken(null);
+            return;
+        }
         setRecaptchaToken(token);
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label>
-                    Mensagem:
-                    <input
-                        type="text"
-                        value={formData.message}
-                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    />
-                </label>
-            </div>
-            <div>
-                <label>
-                    Email:
-                    <input
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    />
-                </label>
-            </div>
-            <div>
-                <ReCAPTCHA ref={recaptchaRef} sitekey={"KEY_RECAPTCHA"} onChange={handleCompleteChallenge} />
-            </div>
-            <button type="submit">Enviar</button>
-            {message && <p>{message}</p>}
-        </form>
+        <div id="contact">
+
+            <form onSubmit={handleSubmit} >
+                <div>
+                    <p>teste</p>
+                    <h3>TESTE h3</h3>
+                    <p>entre em contato, ficarei muito feliz em te responder :)</p>
+                    <label>
+                        <input
+                            type="text"
+                            placeholder="Insira sua mensagem!!!"
+                            value={formData.message}
+                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        />
+                    </label>
+                </div>
+                <div>
+                    <label>
+
+                        <input
+                            type="email"
+                            placeholder=" Insira seu e-mail"
+                            value={formData.email}
+                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        />
+                    </label>
+                </div>
+                <div>
+                    <ReCAPTCHA ref={recaptchaRef} sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY} onChange={handleCompleteChallenge} className="RECAPTCHA" />
+                </div>
+                <button type="submit">Enviar</button>
+                {message && <p className="last-p">{message}</p>}
+            </form>
+        </div>
     );
 };
 

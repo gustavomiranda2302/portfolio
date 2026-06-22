@@ -5,6 +5,8 @@ import "../styles/testimonials.css"
 import "../styles/pricing.css"
 import "../styles/contact.css"
 import "../styles/footer.css"
+import "../styles/contactForm.css"
+
 
 import gustavomiranda from "../assets/gustavomiranda.svg"
 import Menu from "../assets/menu.svg"
@@ -22,6 +24,7 @@ import SolutionCard from "../components/SolutionsCard"
 import { Pricing } from "../components/Pricing"
 import { ExternalButton } from "../components/ExternalButton"
 import { Contact } from "../components/Contact"
+import ContactForm from "../components/ContactForm"
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     return (
@@ -218,7 +221,7 @@ export default function Home() {
 
             </section>
 
-            <Contact />
+            <ContactForm />
 
 
             <footer id="footer">

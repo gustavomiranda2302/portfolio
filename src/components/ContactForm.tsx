@@ -25,7 +25,7 @@ const ContactForm = () => {
 
     }
     async function handleSendEmail() {
-        const response = await fetch("/.netlify/functions/send-email", {
+        const response = await fetch("/.netlify/functions", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -91,7 +91,7 @@ const ContactForm = () => {
 
             <form onSubmit={handleSubmit} >
                 <div>
-                    <p>teste</p>
+                    <p className="first-p">teste</p>
                     <h3>TESTE h3</h3>
                     <p>entre em contato, ficarei muito feliz em te responder :)</p>
                     <label>

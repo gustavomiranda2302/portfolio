@@ -8,22 +8,16 @@
     height: auto;
     width: 100%;
     gap: 2rem;
-    border: 1px solid red;
     box-sizing: border-box;
 
     
     
-    :first-child {
-    color: var(--primary-color);
-    font-weight: var(--fw-bold);
-  }
   input{
     box-sizing: border-box;
     width: 35rem;
     height: 3.5rem;
     border-color: var(--primary-color);
-    border-radius: 0.4rem;
-    
+    border-radius: 0.4rem;    
   }
   button{
     border-radius: 0.4rem;
@@ -50,6 +44,11 @@
   .last-p{
     color: var(--second-text-color);
   }
+   .first-p{
+    color: var(--primary-color);
+  font-weight: var(--fw-bold);
+  }
+  
   
 
   

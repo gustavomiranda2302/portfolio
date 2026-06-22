@@ -23,7 +23,6 @@ import TestimonialCard from "../components/TestimonialCard"
 import SolutionCard from "../components/SolutionsCard"
 import { Pricing } from "../components/Pricing"
 import { ExternalButton } from "../components/ExternalButton"
-import { Contact } from "../components/Contact"
 import ContactForm from "../components/ContactForm"
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)

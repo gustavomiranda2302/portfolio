@@ -5,7 +5,7 @@ interface PricingProps {
     plan: "premium" | "basic",
     planTitle: string,
     planDescription: string,
-    price: number,
+    price: string,
     features: string[],
     buttontxt: string,
     srcpic: string
@@ -29,10 +29,11 @@ export function Pricing({ srcpic, bonus, plan, planTitle, planDescription, price
                 <p>{planDescription}</p>
             </span>
             <span className="price">
-                <h2>R$ {price.toFixed(2)}</h2>
-                <p>/mês</p>
+                <h3>{price}</h3>
             </span>
-            <Button text={buttontxt} secondary={!isPremium} />
+            <a href="https://www.linkedin.com/in/gustavo-miranda-dos-santos-5301062b6/" target="_blank" rel="noreferrer noopener">
+                <Button text={buttontxt} secondary={!isPremium} />
+            </a>
             <span className="hr" />
             <span className="features">
                 {features.map((feature, index) => (

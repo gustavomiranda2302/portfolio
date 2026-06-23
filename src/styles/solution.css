@@ -54,7 +54,6 @@
   padding-inline: 1.5rem;
   color: var(--second-text-color);
 }
-
 .card hr {
   height: 6px;
   background: var(--secondary-color);
@@ -71,4 +70,34 @@
         font-size: var(--fs-sm);
         color: var(--primary-color);
     }
+}
+
+@media (width < 768px) {
+  #solution {
+    padding-inline: 1.25rem;
+    gap: 3rem;
+  }
+
+  #solution .even-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    padding-block: 2rem;
+  }
+
+  .card img {
+    max-width: 5rem;
+  }
+
+  .card p {
+    padding-inline: 1rem;
+  }
 }

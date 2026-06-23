@@ -82,7 +82,9 @@ export default function Home() {
                     </p>
                     <div className="flex gap-1">
                         <span>
-                            <Button text="Ver projetos" secondary />
+                            <a href="https://github.com/gustavomiranda2302?tab=repositories" target="_blank" rel="noreferrer noopener" aria-label={''}>
+                                <Button text="Ver projetos" secondary />
+                            </a>
                         </span>
                     </div>
                 </div>

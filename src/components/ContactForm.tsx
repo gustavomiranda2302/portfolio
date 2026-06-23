@@ -91,13 +91,13 @@ const ContactForm = () => {
 
             <form onSubmit={handleSubmit} >
                 <div>
-                    <p className="first-p">teste</p>
-                    <h3>TESTE h3</h3>
-                    <p>entre em contato, ficarei muito feliz em te responder :)</p>
+                    <p className="first-p">Vamos conversar?</p>
+                    <h3>Entre em contato</h3>
+                    <p>Tem um projeto em mente ou uma vaga em aberto? Me manda uma mensagem.</p>
                     <label>
                         <input
                             type="text"
-                            placeholder="Insira sua mensagem!!!"
+                            placeholder="Sua mensagem"
                             value={formData.message}
                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         />
@@ -108,7 +108,7 @@ const ContactForm = () => {
 
                         <input
                             type="email"
-                            placeholder=" Insira seu e-mail"
+                            placeholder="Seu e-mail"
                             value={formData.email}
                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         />

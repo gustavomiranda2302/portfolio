@@ -31,7 +31,7 @@ export function Pricing({ srcpic, bonus, plan, planTitle, planDescription, price
             <span className="price">
                 <h3>{price}</h3>
             </span>
-            <a href="https://www.linkedin.com/in/gustavo-miranda-dos-santos-5301062b6/" target="_blank" rel="noreferrer noopener">
+            <a href="https://www.linkedin.com/in/gustavo-miranda-dos-santos-5301062b6/" target="_blank" rel="noreferrer noopener" aria-label={`${planTitle} - ${buttontxt}`}>
                 <Button text={buttontxt} secondary={!isPremium} />
             </a>
             <span className="hr" />

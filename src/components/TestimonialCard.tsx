@@ -1,5 +1,7 @@
 import estrela from "../assets/estrela.svg"
 import estrelaVazada from "../assets/estrelaVazada.svg"
+import "../styles/testimonials.css"
+
 
 interface TestimonialCardProps {
     image: string;

@@ -28,6 +28,7 @@
   min-height: 26rem;
   display: flex;
   text-align: center;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   border-radius: 6px;

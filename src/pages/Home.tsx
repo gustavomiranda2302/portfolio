@@ -15,11 +15,27 @@ import check from "../assets/check.svg"
 import web from "../assets/desenvolvimento-web.svg"
 import backend from "../assets/backend.svg"
 import infra from "../assets/infra.svg"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button, TestimonialCard, SolutionCard, Pricing, Footer, ContactForm } from "../components"
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
+
+    useEffect(() => {
+        if (showMobileMenu) {
+            document.body.style.overflow = 'hidden';
+            document.body.style.position = 'fixed';
+        } else {
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+        }
+
+        return () => {
+            document.body.style.overflow = '';
+            document.body.style.position = '';
+        };
+    }, [showMobileMenu]);
+
     return (
         <>
             <header className="container py-sm">

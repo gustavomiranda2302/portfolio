@@ -1,73 +1,77 @@
-# React + TypeScript + Vite
+# Portfólio — Gustavo Miranda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Meu portfólio pessoal, feito com React, TypeScript e Vite. Fala um pouco sobre quem sou, o que faço e como entrar em contato.
 
-Currently, two official plugins are available:
+**[gustavomiranda-portfolio.netlify.app](https://gustavomiranda-portfolio.netlify.app)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + TypeScript + Vite
+- CSS com foco em responsividade mobile-first
+- Netlify Functions (Node.js) para o formulário de contato via Nodemailer
+- reCAPTCHA v2
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Seções
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Hero** — apresentação principal
+- **Soluções** — habilidades e serviços
+- **Depoimentos** — feedbacks e referências
+- **Colaboração** — modos de trabalho e disponibilidade
+- **Contato** — formulário funcional com envio de e-mail
+- **Footer** — redes sociais e links
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Rodando localmente
+
+```bash
+git clone https://github.com/gustavomiranda2302/gms-portfolio.git
+cd gms-portfolio
+npm install
+cp .env.example .env
+# Preencha as variáveis no .env
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Deploy
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Hospedado na Netlify com deploy automático a partir da branch `main`. O formulário de contato é processado por uma Netlify Function (`/netlify/functions/contact.ts`), o que mantém as credenciais fora do frontend.
+
+Variáveis necessárias no painel da Netlify:
+
 ```
+EMAIL_USER=
+EMAIL_PASS=
+RECAPTCHA_SECRET_KEY=
+```
+
+---
+
+## Estrutura
+
+```
+gms-portfolio/
+├── netlify/
+│   └── functions/
+│       └── contact.ts
+├── src/
+│   ├── components/
+│   ├── assets/
+│   ├── styles/
+│   └── main.tsx
+├── .env.example
+└── vite.config.ts
+```
+
+---
+
+## Contato
+
+- LinkedIn: [gustavo-miranda-dos-santos-5301062b6](https://www.linkedin.com/in/gustavo-miranda-dos-santos-5301062b6)
+- GitHub: [@gustavomiranda2302](https://github.com/gustavomiranda2302)
